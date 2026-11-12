@@ -19,7 +19,7 @@ const links = [
 const Logo = () => (
     <Image
         className={styles.logoImage}
-        src='/aleksandra-website/images/formae-bureau-logo-transparent.webp'
+        src='/images/formae-bureau-logo-transparent.webp'
         alt='Formae Bureau'
         width={1375}
         height={507}

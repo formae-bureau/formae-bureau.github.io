@@ -13,7 +13,7 @@ export default function Home() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <Image
           className={styles.heroImage}
-          src="/aleksandra-website/pages/projects/006-purmerend/kitchen-2.webp"
+          src="/pages/projects/006-purmerend/kitchen-2.webp"
           alt="A warm, richly textured kitchen and dining space in our Purmerend family home project"
           fill
           sizes="100vw"
@@ -62,7 +62,7 @@ export default function Home() {
         <section className={styles.studio} aria-labelledby="studio-title">
           <div className={styles.studioImage}>
             <Image
-              src="/aleksandra-website/pages/about/about-team.webp"
+              src="/pages/about/about-team.webp"
               alt="Marina and Aleksandra, the founders of Formae Bureau"
               fill
               sizes="(max-width: 767px) 100vw, 45vw"

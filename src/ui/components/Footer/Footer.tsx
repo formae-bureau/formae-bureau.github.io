@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
             <div className={styles.bottom}>
                 <Link href='/' className={styles.logo} aria-label='Formae Bureau home'>
                     <Image
-                        src='/aleksandra-website/images/formae-bureau-logo-transparent.webp'
+                        src='/images/formae-bureau-logo-transparent.webp'
                         alt='Formae Bureau'
                         width={1375}
                         height={507}
