@@ -1,6 +1,6 @@
 export const ABOUT_PAGE = {
     title: 'About',
-    image: '/aleksandra-website/pages/about/about-team.webp',
+    image: '/pages/about/about-team.webp',
     paragraphs: [
         'Meet Marina & Aleksandra, the founders behind FORMAE, brought together by a shared purpose: creating beauty that works.',
         'FORMAE is a full-service interior design studio creating and realising beautiful spaces – from the first idea to the final interior.',

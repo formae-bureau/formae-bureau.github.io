@@ -13,7 +13,7 @@ for (const project of projects) {
   const images = fs
                     .readdirSync(dir)
                     .filter((file) => /\.(avif|gif|jpe?g|png|webp)$/i.test(file))
-                    .map(file => `/aleksandra-website/pages/projects/${project.name}/${file}`);
+                    .map(file => `/pages/projects/${project.name}/${file}`);
 
   fs.writeFileSync(
     path.join(__dirname, `../public/pages/projects/${project.name}/images.json`),
