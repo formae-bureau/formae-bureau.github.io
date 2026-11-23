@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { Footer } from "@/ui/components/Footer/Footer";
 import { Navigation } from "@/ui/components/Navigation/Navigation";
@@ -30,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${alata.variable} ${sourceCodePro.variable}`}>
+      <GoogleTagManager gtmId="GTM-MNZQ5J94" />
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <Navigation />
