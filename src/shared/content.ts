@@ -13,73 +13,25 @@ export const SERVICES_PAGE = {
     title: 'Services',
     services: [
         {
-            id: 'pre-concept-design',
-            title: 'Pre-Concept Design',
+            id: 'full-service-interior-design',
+            title: 'Full-Service Interior Design',
             sections: [
                 {
-                    title: 'Formation of technical specifications',
-                    paragraphs: ['Development of the Design Brief'],
-                    bullets: [
-                        'An interview and questionnaire to understand the lifestyles and daily routines of each family member.',
-                        'On-site measurements to verify the locations of electrical points and clarify the property’s technical details.',
-                    ],
-                },
-                {
-                    title: 'Creation of a Mood Board',
-                    paragraphs: ['A curated selection of colours and stylistic solutions, including references to suitable and accessible retailers. The mood board is created using graphic design software and provided to the client as a PDF file.'],
-                },
-                {
-                    title: 'Space Planning',
                     paragraphs: [
-                        'Development of 2–3 layout options with furniture placement. Furniture placement helps determine suitable furniture dimensions, the required circulation space between items, the overall composition of the room, and its functional arrangement.',
-                        'Once 2–3 layout options have been prepared, the client selects their preferred option, and the final layout is refined accordingly. The space-planning solution is finalised over the course of two consultations.',
+                        'A complete interior design service, from initial concept to detailed technical documentation.',
+                        'We develop thoughtful, functional interiors tailored to your lifestyle and individual needs. Our approach includes space planning, concept development, material and furniture selection, 3D visualisations, and technical drawings.',
                     ],
                 },
             ],
         },
         {
-            id: 'concept-design',
-            title: 'Concept Design',
+            id: 'interior-furnishing-and-styling',
+            title: 'Interior Furnishing & Styling',
             sections: [
                 {
-                    title: 'Interior Collages & 3D Schemes',
                     paragraphs: [
-                        'Selection of the interior style and development of the visual concept through interior collages and 3D schemes for each key space.',
-                        'These materials communicate the overall atmosphere, colour palette, materials, furniture, lighting, and key design elements.',
-                    ],
-                },
-                {
-                    title: 'Optional Photorealistic Visualisations (€20/sq.m.)',
-                    paragraphs: [
-                        'Photorealistic 3D visualisations can be added to the Concept Design package upon request.',
-                        'Please note that this option extends the design timeline by approximately 2 weeks.',
-                    ],
-                },
-                {
-                    title: 'Furniture and Product Specification',
-                    paragraphs: [
-                        'A detailed specification of the selected furniture and interior items.',
-                        'Decorating services are included only to a limited extent. At the design stage, the key decorative elements are selected, including curtains and textiles, additional lighting, and major pieces of artwork such as paintings and posters.',
-                    ],
-                },
-            ],
-        },
-        {
-            id: 'detailed-design-project',
-            title: 'Detailed Design Project',
-            sections: [
-                {
-                    title: 'Technical Drawings',
-                    paragraphs: [
-                        'A complete set of technical drawings for the entire interior, including tile layouts, electrical and plumbing connection points, and the precise location of all interior elements.',
-                        'The documentation package includes:',
-                    ],
-                    bullets: [
-                        'floor finish layout plans;',
-                        'ceiling plans;',
-                        'lighting layout plans;',
-                        'electrical outlet and switch layout plans;',
-                        'custom Furniture Detail Drawings.',
+                        'A thoughtful transformation of your space without the need for a full renovation.',
+                        'We create cohesive interiors through carefully selected furniture, lighting, textiles, artwork, and decorative elements. Whether furnishing a new home or refreshing an existing space, we focus on creating a harmonious and personal atmosphere.',
                     ],
                 },
             ],
@@ -89,33 +41,21 @@ export const SERVICES_PAGE = {
             title: 'Design Supervision',
             sections: [
                 {
-                    paragraphs: ['The Construction Administration service includes:'],
-                    bullets: [
-                        'Scheduled site visits by the designer once per week.',
-                        'Monitoring the compliance of construction and finishing works with the approved design project.',
-                        'Providing guidance to contractors regarding the implementation of design solutions.',
-                        'Clarifying drawings, plans, and specifications included in the design package.',
-                        'Preparing comments and recommendations regarding any deviations from the approved design.',
-                        'Communication with the client and contractors throughout the implementation process.',
-                        'Assistance with furniture delivery inspection and acceptance.',
+                    paragraphs: [
+                        'We support the implementation of your interior design project, ensuring that the final result stays true to the approved design concept.',
+                        'Our service includes regular site visits, communication with contractors, clarification of design details, and guidance throughout the implementation process.',
                     ],
                 },
-                {
-                    paragraphs: ['The Construction Administration service does not include:'],
-                    bullets: [
-                        'Management of the construction team or supervision of workmanship.',
-                        'Technical supervision or verification of compliance with building regulations and construction methods.',
-                        'Organisation or coordination of the construction schedule.',
-                        'Procurement, acceptance, delivery, or storage of materials, furniture, and equipment.*',
-                        'Sourcing contractors or conducting tender processes.',
-                        'Development of new design solutions that substantially alter the approved design project.',
-                    ],
-                },
+            ],
+        },
+        {
+            id: 'furniture-and-material-procurement',
+            title: 'Furniture & Material Procurement',
+            sections: [
                 {
                     paragraphs: [
-                        '*Procurement, acceptance, delivery, and storage of materials, furniture, and equipment are available as an additional service and are charged at 10% of the total procurement budget.',
-                        'Once the design has been approved, any additional changes will be treated as separate requests and charged based on the actual time required. The designer reserves the right to assess the feasibility of any requested changes, taking into account the current project schedule, the impact on the design, and consistency with the overall design concept.',
-                        'Construction Administration is a consultancy service and does not constitute technical supervision or construction management. Responsibility for compliance with construction methods, project timelines, and the quality of workmanship rests solely with the appointed contractors.',
+                        'We assist with sourcing and purchasing furniture, lighting, materials, and decorative elements through our network of trusted suppliers and manufacturers.',
+                        'Our involvement may include supplier communication, order coordination, and delivery arrangements.',
                     ],
                 },
             ],
