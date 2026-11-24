@@ -5,7 +5,7 @@ import { PROJECTS_LIST } from "@/shared/projects";
 import { Text } from "@/ui/components/Text/Text";
 import styles from "./page.module.css";
 
-const selectedProjects = [PROJECTS_LIST[5], PROJECTS_LIST[2], PROJECTS_LIST[6]];
+const selectedProjects = [PROJECTS_LIST[4], PROJECTS_LIST[2], PROJECTS_LIST[5]];
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <Image
           className={styles.heroImage}
-          src="/pages/projects/006-purmerend/kitchen-2.webp"
-          alt="A warm, richly textured kitchen and dining space in our Purmerend family home project"
+          src="/pages/projects/005-haarlem-pladellastraat/1.webp"
+          alt="A vibrant contemporary interior in our Haarlem home project"
           fill
           sizes="100vw"
           priority
@@ -32,9 +32,9 @@ export default function Home() {
             <div className={styles.heroBottom}>
               <Text variant="meta">From the first idea<br />to the final interior.</Text>
               <a className={styles.heroLink} href="#selected-work"><Text as="span" variant="meta">Explore our work</Text> <Text as="span" variant="icon" aria-hidden="true">↓</Text></a>
-              <Link className={styles.heroProject} href="/projects/006-purmerend">
-                <Text as="span" variant="caption">Featured project / 06</Text>
-                <Text as="span" variant="meta">Purmerend family home <Text as="span" variant="icon" aria-hidden="true">↗</Text></Text>
+              <Link className={styles.heroProject} href="/projects/005-haarlem-pladellastraat">
+                <Text as="span" variant="caption">Featured project / 05</Text>
+                <Text as="span" variant="meta">Contemporary home in Haarlem <Text as="span" variant="icon" aria-hidden="true">↗</Text></Text>
               </Link>
             </div>
           </div>

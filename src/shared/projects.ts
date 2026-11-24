@@ -3,7 +3,6 @@ import image2 from '../../public/pages/projects/002-amstelveen/images.json'
 import image3 from '../../public/pages/projects/003-capelle-aan-den-ijssel/images.json'
 import image4 from '../../public/pages/projects/004-haarlem-neptunusstraat/images.json'
 import image5 from '../../public/pages/projects/005-haarlem-pladellastraat/images.json'
-import image6 from '../../public/pages/projects/006-purmerend/images.json'
 import image7 from '../../public/pages/projects/007-amsterdam-ijburg/images.json'
 import image8 from '../../public/pages/projects/008-amstelveen-rozenoord/images.json'
 
@@ -58,13 +57,6 @@ export const PROJECTS_LIST: ProjectType[] = [
     description: ['This brand-new home in a beautiful residential development was brought to life through vibrant colours, vintage furniture, and iconic lighting pieces.', 'Expanding the entrance hall and creating a cohesive colour scheme transformed the arrival into a warm, golden experience. The kitchen was also enlarged by rethinking the proportions of the entrance corridor.', 'A walnut-veneered headboard, a striking warm-toned wardrobe, and new storage beneath the roof complete this contemporary interior filled with personality.'],
     images: image5,
     slug: '005-haarlem-pladellastraat',
-  },
-  {
-    name: 'Purmerend family home',
-    details: 'Interior design',
-    description: [],
-    images: image6,
-    slug: '006-purmerend',
   },
   {
     name: 'Elegant bathroom and powder room in IJburg',
