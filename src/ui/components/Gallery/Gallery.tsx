@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./Gallery.module.css";
 import { Text } from "../Text/Text";
+import { ArrowIcon } from "../icons/ArrowIcon";
 
 type GalleryProps = {
     images: string[];
@@ -80,9 +81,9 @@ export const Gallery: React.FC<GalleryProps> = ({images, name = 'Project', start
                     <Image src={images[index]} alt={`${name}, image ${index + 1} of ${images.length}`} fill sizes="92vw" style={{objectFit: 'contain'}} />
                 </button>
                 <div className={styles['gallery__controls']}>
-                    <button type="button" className={styles['gallery__button']} aria-label="Previous image" onClick={showPrev} disabled={images.length < 2}><Text as="span" variant="iconLarge" aria-hidden="true">←</Text></button>
+                    <button type="button" className={styles['gallery__button']} aria-label="Previous image" onClick={showPrev} disabled={images.length < 2}><ArrowIcon direction="left" size={25} /></button>
                     <Text variant="meta" className={styles['gallery__counter']} aria-live="polite" aria-atomic="true">{String(index + 1).padStart(2, '0')} <span>/</span> {String(images.length).padStart(2, '0')}</Text>
-                    <button type="button" className={styles['gallery__button']} aria-label="Next image" onClick={showNext} disabled={images.length < 2}><Text as="span" variant="iconLarge" aria-hidden="true">→</Text></button>
+                    <button type="button" className={styles['gallery__button']} aria-label="Next image" onClick={showNext} disabled={images.length < 2}><ArrowIcon direction="right" size={25} /></button>
                 </div>
             </div>
         </dialog>

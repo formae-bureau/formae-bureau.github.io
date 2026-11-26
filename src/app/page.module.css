@@ -52,7 +52,7 @@
     border-top: 1px solid rgb(255 255 255 / 40%);
 }
 .heroLink { width: fit-content; display: flex; align-items: center; gap: 24px; }
-.heroLink > span:last-child {
+.heroLink > svg {
     display: grid;
     place-items: center;
     width: 38px;
@@ -61,7 +61,7 @@
     border-radius: 50%;
     transition: transform 200ms ease;
 }
-.heroLink:hover > span:last-child { transform: translateY(4px); }
+.heroLink:hover > svg { transform: translateY(4px); }
 .heroProject { justify-self: end; }
 .heroProject > span:first-child {
     display: block;
@@ -85,7 +85,7 @@
     border-bottom: 1px solid var(--foreground);
     transition: color 180ms ease, border-color 180ms ease;
 }
-.textLink > span:last-child { color: var(--accent); }
+.textLink > svg { color: var(--accent); }
 .textLink:hover { color: var(--accent); border-color: var(--accent); }
 .introDetails .textLink { margin-top: 22px; }
 .work { padding-top: 32px; border-top: 1px solid var(--border-color); }
@@ -142,7 +142,7 @@
     .heroTitle { margin-bottom: 28px; }
     .heroBottom { grid-template-columns: 1fr 1fr; gap: 24px 12px; }
     .heroLink { justify-self: end; gap: 12px; }
-    .heroLink > span:last-child { width: 32px; height: 32px; }
+    .heroLink > svg { width: 32px; height: 32px; }
     .heroProject { grid-column: 1 / -1; justify-self: start; }
     .heroProject > span:first-child { display: inline; margin: 0 12px 0 0; }
     .introduction { padding: 64px 0 72px; }

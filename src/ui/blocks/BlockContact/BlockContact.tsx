@@ -2,6 +2,7 @@ import React from "react";
 import styles from './BlockContact.module.css';
 import { Link } from "@/ui/components/Link/Link";
 import { Text } from "@/ui/components/Text/Text";
+import { ArrowIcon } from "@/ui/components/icons/ArrowIcon";
 
 export const BlockContact: React.FC = () => {
     return (
@@ -24,7 +25,7 @@ export const BlockContact: React.FC = () => {
                 >
                     <Text as="span" variant="label" className={styles['block-contact__label']}>Email</Text>
                     <Text as="span" variant="contactValue" className={styles['block-contact__value']}>contact@formaebureau.nl</Text>
-                    <Text as="span" variant="icon" className={styles['block-contact__arrow']} aria-hidden='true'>↗</Text>
+                    <ArrowIcon className={styles['block-contact__arrow']} size={20} />
                 </Link>
                 <Link
                     className={styles['block-contact__link']}
@@ -34,7 +35,7 @@ export const BlockContact: React.FC = () => {
                 >
                     <Text as="span" variant="label" className={styles['block-contact__label']}>Social</Text>
                     <Text as="span" variant="contactValue" className={styles['block-contact__value']}>Instagram</Text>
-                    <Text as="span" variant="icon" className={styles['block-contact__arrow']} aria-hidden='true'>↗</Text>
+                    <ArrowIcon className={styles['block-contact__arrow']} size={20} />
                 </Link>
                 <Link
                     className={styles['block-contact__link']}
@@ -44,7 +45,7 @@ export const BlockContact: React.FC = () => {
                 >
                     <Text as="span" variant="label" className={styles['block-contact__label']}>Network</Text>
                     <Text as="span" variant="contactValue" className={styles['block-contact__value']}>LinkedIn</Text>
-                    <Text as="span" variant="icon" className={styles['block-contact__arrow']} aria-hidden='true'>↗</Text>
+                    <ArrowIcon className={styles['block-contact__arrow']} size={20} />
                 </Link>
             </div>
         </section>

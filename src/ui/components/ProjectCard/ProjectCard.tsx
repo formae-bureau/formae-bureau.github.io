@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from './ProjectCard.module.css';
 import { Text } from "../Text/Text";
+import { ArrowIcon } from "../icons/ArrowIcon";
 
 type ProjectCardProps = {
     href?: string;
@@ -34,7 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({href, name, details, im
                     fill
                     sizes="(max-width: 600px) 92vw, (max-width: 1000px) 44vw, 30vw"
                 />
-                <Text as="span" variant="icon" className={styles['project-card__open']} aria-hidden="true">{onClick ? '+' : '↗'}</Text>
+                <span className={styles['project-card__open']} aria-hidden="true">{onClick ? '+' : <ArrowIcon size={20} />}</span>
             </span>
         </>
     );

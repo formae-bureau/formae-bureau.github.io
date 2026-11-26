@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BlockProjectsList } from "@/ui/blocks/BlockProjectsList/BlockProjectsList";
 import { PROJECTS_LIST } from "@/shared/projects";
 import { Text } from "@/ui/components/Text/Text";
+import { ArrowIcon } from "@/ui/components/icons/ArrowIcon";
 import styles from "./page.module.css";
 
 const mainImage = PROJECTS_LIST[1].images[3];
@@ -32,10 +33,10 @@ export default function Home() {
             </Text>
             <div className={styles.heroBottom}>
               <Text variant="meta">From the first idea<br />to the final interior.</Text>
-              <a className={styles.heroLink} href="#selected-work"><Text as="span" variant="meta">Explore our work</Text> <Text as="span" variant="icon" aria-hidden="true">↓</Text></a>
+              <a className={styles.heroLink} href="#selected-work"><Text as="span" variant="meta">Explore our work</Text> <ArrowIcon direction="down" size={16} /></a>
               <Link className={styles.heroProject} href="/projects/005-haarlem-pladellastraat">
                 <Text as="span" variant="caption">Featured project / 05</Text>
-                <Text as="span" variant="meta">Contemporary home in Haarlem <Text as="span" variant="icon" aria-hidden="true">↗</Text></Text>
+                <Text as="span" variant="meta">Contemporary home in Haarlem <ArrowIcon size={16} /></Text>
               </Link>
             </div>
           </div>
@@ -45,7 +46,7 @@ export default function Home() {
         <section id="selected-work" className={styles.work} aria-labelledby="work-title">
           <div className={styles.sectionHeading}>
             <Text as="h2" variant="sectionTitle" id="work-title">Selected work</Text>
-            <Link className={styles.textLink} href="/projects"><Text as="span" variant="meta">All projects</Text> <Text as="span" variant="icon" aria-hidden="true">↗</Text></Link>
+            <Link className={styles.textLink} href="/projects"><Text as="span" variant="meta">All projects</Text> <ArrowIcon size={16} /></Link>
           </div>
           <BlockProjectsList projects={selectedProjects} />
         </section>
@@ -55,7 +56,7 @@ export default function Home() {
             <Text as="h2" variant="contentTitle" id="intro-title">Creating beauty<br />that works.</Text>
             <div className={styles.introDetails}>
               <Text variant="body">We are Formae Bureau, a full-service interior design studio. We bring architecture, materials and your personal story together to create spaces that feel right.</Text>
-              <Link className={styles.textLink} href="/about"><Text as="span" variant="meta">Discover our approach</Text> <Text as="span" variant="icon" aria-hidden="true">↗</Text></Link>
+              <Link className={styles.textLink} href="/about"><Text as="span" variant="meta">Discover our approach</Text> <ArrowIcon size={16} /></Link>
             </div>
           </div>
         </section>
@@ -74,7 +75,7 @@ export default function Home() {
             <Text as="h2" variant="contentTitle" id="studio-title">Your space.<br />Our shared vision.</Text>
             <Text variant="body">From the first sketch to the final installation, we stay close to the process. Developing the concept, working with materials, sourcing furniture and overseeing the build.</Text>
             <Text variant="body">Making sure the idea works in the space, not just on paper.</Text>
-            <Link className={styles.textLink} href="/services"><Text as="span" variant="meta">How we work</Text> <Text as="span" variant="icon" aria-hidden="true">↗</Text></Link>
+            <Link className={styles.textLink} href="/services"><Text as="span" variant="meta">How we work</Text> <ArrowIcon size={16} /></Link>
             <svg className={styles.stroke} viewBox="0 0 420 145" fill="none" aria-hidden="true">
               <path d="M1 59C79 97 247-1 302 23c64 28-167 131-152 93 8-21 176-55 267-111" />
             </svg>

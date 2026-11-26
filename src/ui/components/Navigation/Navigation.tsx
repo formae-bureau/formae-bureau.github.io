@@ -7,6 +7,7 @@ import { Link } from "../Link/Link";
 import { cc } from "../utils/cc";
 import styles from "./Navigation.module.css";
 import { Text } from "../Text/Text";
+import { ArrowIcon } from "../icons/ArrowIcon";
 
 const links = [
     { href: '/', label: 'Home' },
@@ -134,7 +135,7 @@ export const Navigation: React.FC = () => {
                         >
                             <Text as="span" variant="label" className={styles.linkIndex} aria-hidden='true'>0{index + 1}</Text>
                             <Text as="span" variant="sectionTitle">{label}</Text>
-                            <Text as="span" variant="iconLarge" className={styles.mobileArrow} aria-hidden='true'>↗</Text>
+                            <ArrowIcon className={styles.mobileArrow} size={24} />
                         </Link>
                     ))}
                 </nav>
