@@ -5,6 +5,7 @@ import { PROJECTS_LIST } from "@/shared/projects";
 import { Text } from "@/ui/components/Text/Text";
 import styles from "./page.module.css";
 
+const mainImage = PROJECTS_LIST[1].images[3];
 const selectedProjects = [PROJECTS_LIST[4], PROJECTS_LIST[2], PROJECTS_LIST[5]];
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <section className={styles.hero} aria-labelledby="hero-title">
         <Image
           className={styles.heroImage}
-          src="/pages/projects/005-haarlem-pladellastraat/1.webp"
+          src={mainImage}
           alt="A vibrant contemporary interior in our Haarlem home project"
           fill
           sizes="100vw"
