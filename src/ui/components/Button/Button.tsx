@@ -3,6 +3,7 @@ import styles from './Button.module.css';
 import { Link } from "../Link/Link";
 import { cc } from "../utils/cc";
 import { Text } from "../Text/Text";
+import { ArrowIcon } from "../icons/ArrowIcon";
 
 type ButtonProps = {
     children: React.ReactNode;
@@ -14,8 +15,8 @@ export const Button: React.FC<ButtonProps> = ({children, href, className}) => {
     const buttonClassName = cc(styles['button'], styles['button_view_cta'], className);
 
     if (href) {
-        return <Link className={buttonClassName} href={href}><Text as="span" variant="label">{children}</Text><Text as="span" variant="iconButton" aria-hidden='true'>↗</Text></Link>;
+        return <Link className={buttonClassName} href={href}><Text as="span" variant="label">{children}</Text><ArrowIcon size={23} /></Link>;
     }
 
-    return <button type='button' className={buttonClassName}><Text as="span" variant="label">{children}</Text><Text as="span" variant="iconButton" aria-hidden='true'>↗</Text></button>;
+    return <button type='button' className={buttonClassName}><Text as="span" variant="label">{children}</Text><ArrowIcon size={23} /></button>;
 };

@@ -7,6 +7,7 @@ import { ProjectCard } from "@/ui/components/ProjectCard/ProjectCard";
 import { ProjectCardWrapper } from "@/ui/components/ProjectCardWrapper/ProjectCardWrapper";
 import { Gallery } from "@/ui/components/Gallery/Gallery";
 import Link from 'next/link';
+import { ArrowIcon } from "@/ui/components/icons/ArrowIcon";
 
 type BlockProjectProps = {
     project: ProjectType;
@@ -22,7 +23,7 @@ export const BlockProject: React.FC<BlockProjectProps> = ({project}) => {
     return (
         <div className={styles['block-project']}>
             <div className={styles['block-project__eyebrow']}>
-                <Link href="/projects"><Text as="span" variant="meta">All projects</Text> <Text as="span" variant="icon" aria-hidden="true">↗</Text></Link>
+                <Link href="/projects"><Text as="span" variant="meta">All projects</Text> <ArrowIcon size={16} /></Link>
                 <Text as="span" variant="meta"><span className={styles['block-project__slash']} aria-hidden="true">/</span> {String(Number(slug.split('-')[0])).padStart(2, '0')}</Text>
             </div>
             <header className={styles['block-project__info-wrapper']}>
